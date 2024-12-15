@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Pinterest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-gifs left">
+        <img src="https://www.cameronsworld.net/img/content/32/treasure-room/6.gif" alt="Left 90s GIF">
+    </div>
+    <div class="background-gifs right">
+        <img src="https://www.cameronsworld.net/img/content/32/treasure-room/6.gif" alt="Right 90s GIF">
+    </div>
+
+    <div class="heading">
+        <h1>Pinterest</h1>
+    </div>
+    <div class="collection-container" id="collectionsContainer">
+        <!-- Collections will be dynamically loaded here -->
+    </div>
+    
+    <div class="pins-modal" id="pinsModal" style="display: none;">
+        <div class="cork-board">
+            <div class="board-header">
+                <h2 id="collectionTitle">Collection Pins</h2>
+                <button class="close-btn" id="closeModal">×</button>
+            </div>
+            <div class="pins-grid" id="pinsGrid">
+                <!-- Pins will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module">
+        import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      
+        new fairyDustCursor();
+    </script>
+</body>
+</html>
